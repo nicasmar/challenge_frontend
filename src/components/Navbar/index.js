@@ -1,30 +1,32 @@
 import React from 'react'
 import { Container, NavLink, Title, LoginContainer, LeftContainer } from './styles'
+import { useHistory } from 'react-router-dom'
 
 const Navbar = () => {
   
+  const history = useHistory()
+    
   return (
   <Container>
     {localStorage.getItem('token') ? 
     <> 
       <LeftContainer>
-        <Title>The Marketplace</Title>
-        <NavLink to="/home">Home</NavLink>
-        <NavLink to="/cart">My Cart</NavLink>
-        <NavLink to="/account">My Account</NavLink>
+        <Title>The WHO</Title>
       </LeftContainer>
       <LoginContainer>
-        <NavLink to="/" onClick={() => {
+        <NavLink to="/login" onClick={() => {
           localStorage.removeItem('token')
           localStorage.removeItem('userId')
-          window.location.reload()}}>Sign Out</NavLink>
+          history.push('/login')
+          window.location.reload()
+          }}>Sign Out</NavLink>
       </LoginContainer>
     </>
     :
     <>
-      <Title>The Marketplace</Title>
+      <Title>The WHO</Title>
       <LoginContainer>
-        <NavLink to="/">Log In</NavLink>
+        <NavLink to="/login">Log In</NavLink>
       </LoginContainer>
     </>
     }

@@ -17,7 +17,7 @@ const Login = () => {
 
   const history = useHistory()
   if (localStorage.getItem('token')) {
-     history.push('/home')
+     history.push('/')
   }
   const [email, setEmail] = useState('')
   const [pass, setPass] = useState('')

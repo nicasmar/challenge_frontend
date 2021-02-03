@@ -7,7 +7,6 @@ export const REGISTER = gql`
       id,
       username,
       password,
-      money
       },
       token
     }
