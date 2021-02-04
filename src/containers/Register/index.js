@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { useMutation } from '@apollo/react-hooks'
 import { useHistory } from 'react-router-dom'
 import { Link } from 'react-router-dom'
@@ -75,6 +75,5 @@ const handleSubmit = async () => {
     </Container>
   )
 }
-
 
 export default Register

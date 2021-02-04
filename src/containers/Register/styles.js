@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  height: 100vh;
+  height: 150vh;
   width: 100vw;
   padding: 25px;
   flex-direction: column;
@@ -61,13 +61,6 @@ export const Button = styled.button`
     }
 `
 export const Title = styled.div`
-    /* color: linear-gradient(178.18deg, #9DC2FF -13.56%, #281AC8 158.3%);
-
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 36px; */
     font-family: Tahoma;
     font-weight: bold;
     font-size: 2em;

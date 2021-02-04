@@ -46,3 +46,30 @@ export const Search = styled.input`
   margin-bottom: 10px;
   outline-width: 0;
 `
+
+export const Table = styled.table`
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 1000px;
+  margin: auto;
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  .remove {
+    width: 10px;
+  }
+
+  .update {
+    width: 20px;
+  }
+
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #9DC2FF;
+  }
+`

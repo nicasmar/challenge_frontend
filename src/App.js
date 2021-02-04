@@ -1,12 +1,11 @@
 import React from 'react'
 import { ApolloProvider } from '@apollo/react-hooks'
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
-import { ThemeProvider } from 'styled-components'
 import client from './client'
 
 import Home from './containers/Home'
 import Login from './containers/Login'
-import Navbar from './components/Navbar'
+import Navbar from './containers/Navbar'
 import Register from './containers/Register'
 
 const App = () => (
