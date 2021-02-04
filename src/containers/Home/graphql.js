@@ -5,6 +5,8 @@ export const allUsers = gql`
     allUsers {
       username
       email
+      city
+      vaccine
     }
   }
 `

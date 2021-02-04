@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useQuery } from '@apollo/react-hooks'
 import { Container, Table } from './styles'
 import { useHistory } from 'react-router-dom'
@@ -23,6 +23,8 @@ const Home = () => {
                         <tr>
                         <th>username</th>
                         <th>email</th>
+                        <th>city</th>
+                        <th>vaccine</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -31,6 +33,8 @@ const Home = () => {
                                 <tr>
                                     <td>{user.username}</td>
                                     <td>{user.email}</td>
+                                    <td>{user.city}</td>
+                                    <td>{user.vaccine}</td>
                                 </tr>
                             </>
                         ))}
